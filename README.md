@@ -1,10 +1,10 @@
 # okhttp-utils
 
->由于个人原因，现已停止维护。
+>由
 
 对okhttp的封装类，okhttp见：[https://github.com/square/okhttp](https://github.com/square/okhttp).
 
-目前对应okhttp版本`3.3.1`.
+目前对应okhttp版本`3.14.2`.
 
 ## 用法
 
@@ -14,12 +14,7 @@
 	compile 'com.zhy:okhttputils:2.6.2'
 	```
 	
-* Eclipse
-	
-	下载最新jar:[okhttputils-2\_6\_2.jar](okhttputils-2_6_2.jar?raw=true)
 
-	注：需要同时导入okhttp和okio的jar，下载见：[https://github.com/square/okhttp](https://github.com/square/okhttp).
-	
 
 ## 目前对以下需求进行了封装
 * 一般的get请求
