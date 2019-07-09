@@ -1,6 +1,6 @@
 # okhttp-utils
 
->由
+>由于鸿洋大神的okhttp-utils已经停止维护了，所以我就把他的okhttp-utils fork过来，并把compileSdkVersion改为28，
 
 对okhttp的封装类，okhttp见：[https://github.com/square/okhttp](https://github.com/square/okhttp).
 
@@ -11,7 +11,7 @@
 * Android Studio
 	
 	```
-	compile 'com.zhy:okhttputils:2.6.2'
+	下载整个项目，把okhttputils以library的形式集成到你自己的项目里。
 	```
 	
 
