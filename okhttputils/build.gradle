@@ -1,13 +1,10 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.novoda.bintray-release'//添加
-
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.1"
+    compileSdkVersion 28
 
     defaultConfig {
-        minSdkVersion 9
+        minSdkVersion 14
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"
@@ -25,7 +22,6 @@ android {
 
 }
 
-
 task clearJar(type: Delete) {
     delete 'build/outputs/okhttputils.jar'
 }
@@ -39,20 +35,7 @@ task makeJar(type: Copy) {
 
 makeJar.dependsOn(clearJar, build)
 
-
-
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.squareup.okhttp3:okhttp:3.3.1'
+    api fileTree(dir: 'libs', include: ['*.jar'])
+    api 'com.squareup.okhttp3:okhttp:3.14.2'
 }
-
-//添加
-publish {
-    userOrg = 'hongyangandroid'//bintray.com用户名
-    groupId = 'com.zhy'//jcenter上的路径
-    artifactId = 'okhttputils'//项目名称
-    publishVersion = '2.6.2'//版本号
-    desc = 'Oh hi, this is a nice description for a project, right?'
-    website = 'https://github.com/hongyangAndroid/okhttp-utils'
-}
-
