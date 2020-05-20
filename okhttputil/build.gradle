@@ -5,7 +5,7 @@ android {
 
     defaultConfig {
         minSdkVersion 14
-        targetSdkVersion 23
+        targetSdkVersion 28
         versionCode 1
         versionName "1.0"
     }
@@ -37,5 +37,6 @@ makeJar.dependsOn(clearJar, build)
 
 dependencies {
     api fileTree(dir: 'libs', include: ['*.jar'])
-    api 'com.squareup.okhttp3:okhttp:3.14.2'
+//    api 'com.squareup.okhttp3:okhttp:3.14.2'
+    api 'com.squareup.okhttp3:okhttp:4.2.2'
 }
